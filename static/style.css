@@ -11,6 +11,7 @@ body{
     margin-top: 8%;
     display: inline-block;
     padding: 100px;
+    padding-right: 80px;
 }
 h1 {
     font-size: 250px;
@@ -44,7 +45,24 @@ h1 {
     font-size: 50px;
     background-color: #364898;
 }
-.box:hover {
+.emptybox {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 35px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 45px;
+    margin: 10px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px;
+    transition-property: box-shadow;
+    transition-duration:0.5s;
+    color: aliceblue;
+    font-size: 50px;
+    background-color: #364898;
+}
+.emptybox:hover {
     background-color:#424d7e;
     box-shadow: 10px -10px;
     animation: alternate;
