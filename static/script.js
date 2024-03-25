@@ -30,7 +30,3 @@ function adding(element){
         }
     }
 }
-if (sum == 9){
-    labelO.style.color = 'aliceblue'
-    labelX.style.color = 'aliceblue'
-}
