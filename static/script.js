@@ -45,7 +45,7 @@ function adding(element,liner){
                 }
             }
 
-            }
+        }
         for  (let num = 0; num < 3; num++){
             x = 0
             o = 0
@@ -63,25 +63,17 @@ function adding(element,liner){
                 }
             }
         }
-        for  (let num = 0; num < 3; num++){
-            x = 0
-            o = 0
-            sin++
-            for (let line = 0; line < 3; line++){
-                if (li[line+sin][num] == 'X'){
-                    x += 1
-                    if (x == 3){
-                        win = true
-                        break
-                    }
-                }
-                else if (li[line][num] == 'O'){
-                    o += 1
-                    if (o == 3){win = true;break}
-                }
-            }
+        if (
+            li[0][0] == 'X' && li[1][1] == 'X' && li[2][2] == 'X' ||
+            li[0][2] == 'X' && li[1][1] == 'X' && li[2][0] == 'X'
+            ){
+            win = true
         }
-
+        else if (
+            li[0][0] == 'O' && li[1][1] == 'O' && li[2][2] == 'O' ||
+            li[0][2] == 'O' && li[1][1] == 'O' && li[2][0] == 'O'){
+            win = true
+        }
 
         if (win && sum%2 == 0){
             dashbord.innerHTML = 'win O!!'
