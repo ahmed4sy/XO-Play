@@ -11,7 +11,9 @@ body{
     margin-top: 8%;
     display: inline-block;
     padding: 100px;
+    padding-top: 90px;
     padding-right: 80px;
+    padding-bottom: 0px;
 }
 h1 {
     font-size: 250px;
@@ -66,4 +68,10 @@ h1 {
     background-color:#424d7e;
     box-shadow: 10px -10px;
     animation: alternate;
+}
+label{
+    display: block;
+    padding-left: 17%;
+    font-size: 100px;
+    color:rgb(116, 179, 181);
 }
